@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://7w83cvejrdag"]
+
+[ext_resource type="ArrayMesh" uid="uid://dosioql6jcoc5" path="res://scenes/Face Sculpture(OBJ).obj" id="1_cbkie"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kbh5q"]
+size = Vector3(4.44507, 2.40991, 1.44467)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.574829, 1.14124, 0.995316)
+shape = SubResource("BoxShape3D_kbh5q")
+
+[node name="FaceSculpture(obj)" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.007, 0, 0, 0, 0.007, 0, 0, 0, 0.007, 0.55637, 4.76837e-07, 0.957795)
+mesh = ExtResource("1_cbkie")
